@@ -1,9 +1,90 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podstawowe znaczniki HTML</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400&family=Merriweather:ital@0;1&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Work+Sans&display=swap" rel="stylesheet"> 
+</head>
 <body>
-  <h1>YOUR NAME</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <div id="nav">
+        <a href="">Strona główna</a>
+        <a href="">BLOG</a>
+        <a href="">Kompendium</a>
+        <a href="">O Nas</a>
+    </div>
+    <div id="post">
+        <h1>Podstawowe znaczniki HTML – czy je znasz?</h1>
+        <img src="pc.jpg" alt="komputer">
+        <p>Na co dzień przeglądamy strony internetowe w poszukiwaniu informacji, inspiracji lub produktów i nie zaprzątamy sobie głowy tym, jak są zbudowane i jak działają. Tym razem zajrzymy jednak do internetowej kuchni i przyjrzymy się strukturze stron www i językowi, który odpowiada za poukładanie informacji i elementów wewnątrz strony internetowej. HTML – co to jest za kod i o co chodzi z tymi znacznikami? Poznaj najważniejsze informacje.</p>
+        <p id="cytat">Kilka słów o tym, czym jest HTML</p>
+        <p>HTML, a dokładniej HyperText Markup Language to hipertekstowy język znaczników (tagów), który służy do budowania struktury strony, jej zawartości i jest niezbędnym elementem w SEO. Hipertekstowy oznacza taki sposób organizacji danych, który pozwala użytkownikowi przełączać się między stronami w dowolny sposób.<br> Strona internetowa bardzo często jest zbiorem plików z rozszerzeniem .html. Przeglądarki internetowe interpretują kod HTML strony, wyświetlając finalnie treść zrozumiałą dla użytkowników. Sam HTML można nazwać organizerem strony, ponieważ porządkuje ją, a jednocześnie daje możliwość zdecydowania, jaka treść na stronie będzie nagłówkiem, paragrafem, linkiem, gdzie pojawi się zdjęcie lub grafika, co warto wypunktować lub wyróżnić. Warto jednak pamiętać o tym, że HTML nie odpowiada za wygląd poszczególnych elementów. Jeżeli chcemy wizualnie poprawić witrynę, sięgamy po kaskadowe arkusze stylów nazywane CSS (ang. Cascading Style Sheets).
+
+        <br>Język HTML opiera się na znacznikach (tagach) i to jest jego podstawa. Można porównać je do opakowań, które obudowują różne części treści, a dzięki temu danej treści możemy przypisać określony typ. Tag jest to specjalne słowo lub litera zamknięte w ostrych nawiasach. Pomiędzy tymi nawiasami znajduje się docelowa treść.</p>
+        <img id="struktura" src="img2.jpg" alt="struktura">    
+    </div>
+    <div id="znacniki">
+        <p id="cytat">Znaczniki HTML i atrybuty – jak działają?</p>
+        <p>W języku HTML znacznik jest kluczowym elementem. Może on również posiadać atrybuty, a więc dodatkowe informacje o elemencie. W niektórych znacznikach dodanie atrybutu lub atrybutów jest konieczne dla prawidłowego ich działania. Atrybuty zawsze są umieszczane w tagu otwierającym i składają się z nazwy oraz wartości.
+
+            Znacznik &lta&gt właściwie jest bezużyteczny bez atrybutu href, który wskazuje adres odsyłający. Prawidłowo zapisana składnia wygląda tak:
+            
+            &lta href=”adres strony”&gtTreść, która ma być podlinkowana&l/a&gt
+            
+            Inny przykład znacznika, który działa w parze z atrybutem to &ltimg&gt. Wraz z atrybutami wygląda następująco:
+            
+            &ltimg src=”ścieżka do pliku z obrazem” alt=”opis alternatywny” title=”tytuł zdjęcia”&gt
+            
+            Bez wskazania źródła pliku w atrybucie src obraz nie wyświetli się na stronie. Wtedy pojawi się opis alternatywny, który dodajemy w atrybucie alt.&lt/p&gt
+    </div>
+    <div id="tabela">
+        <p id="cytat">Tabela zawierjąca podstawowe znaczniki i ich atrybuty</p>
+
+        <table>
+            <tr>
+                <th>L.p</th>
+                <th>Znacznik</th>
+                <th>Opis</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>&lt!DOCTYPE&gt</td>
+                <td>Deklaracja typu dokumentu</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>&lthtml&gt </td>
+                <td>Definiuje dokument HTML</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>&lthead&g</td>
+                <td>Definiuje informacje o dokumencie</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>&ltmeta&gt</td>
+                <td>Definiuje metadane dotyczące dokumentu HTML</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>&ltbase&gt</td>
+                <td>Określa podstawowy adres URL / cel dla wszystkich względnych adresów URL w dokumencie</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>&ltlink&gt</td>
+                <td>Definiuje związek z zasobem zewnętrznym (np. podłączania arkuszy stylów</td>
+            </tr>
+
+
+        </table>
+
+    </div>
+
+
 </body>
- 
 </html>
